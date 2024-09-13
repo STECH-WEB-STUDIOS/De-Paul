@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="stylesheet" href="assets/css/new.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>        
+
+    <title>De Paul LCC</title>
+
+</head>
+<body>
+
+  <a href="https://wa.me/919846369301" target="_blank" id="whatsappBtn" class="btn btn-success">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <button id="scrollTopBtn" class="btn btn-primary" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Particle.js Container -->
+  <div id="particles-js"></div>
+
+  <div id="main-content">
+
+    <!-- First Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Brand Image" width="40" class="d-inline-block align-top">       
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="tel:+91-9846369301"><b><i class="fa-solid fa-square-phone"></i> +91-9846369301</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="mailto:depaullcc@gmail.com"><b><i class="fa-solid fa-square-envelope"></i> depaullcc@gmail.com</b></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" target="_blank"
+            href="https://www.google.com/maps/place/De+Paul+Lcc+(De+Paul+linguistic+Coaching+Centre)/@9.508011,76.668688,21z/data=!4m6!3m5!1s0x3b06319ba520cd35:0x928e8f2ec512745b!8m2!3d9.5080407!4d76.6686797!16s%2Fg%2F11g1mhppxc?hl=en&entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D">
+            <b><i class="fa-solid fa-location-dot"></i> Nedumkunnam</b></a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link fw-bold" href="#" data-toggle="modal" data-target="#loginModal"><b><i class="fa-solid fa-user"></i> Login</b></a>
+            <a class="nav-link fw-bold" href="#" data-toggle="modal" data-target="#signUpModal"><b>&nbsp;Sign Up</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body d-flex p-0">
+            <!-- Left Side Content -->
+            <div class="p-4 text-center modal-left" id="loginModalLeftContent" style="width: 40%;">
+              <img src="assets/img/logo.png" alt="Logo" class="mb-3" style="width: 80px;">
+              <h5 class="text-center">Log In</h5>
+              <p>Get access to your Orders, Wishlist and Recommendations.</p>
+            </div>
+            <!-- Right Side Content -->
+            <div class="p-4" id="loginModalRightContent" style="flex: 1;">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="mobileNumber" class="form-label">Mobile Number</label>
+                  <input type="text" class="form-control" id="mobileNumber" placeholder="Mobile Number" required>
+                </div>
+                <div class="mb-3 d-flex justify-content-between align-items-center">
+                  <label for="password" class="form-label">Password</label>
+                  <a href="#" id="forgotLink" class="text-decoration-none">Forgot?</a>
+                </div>
+                <input type="password" class="form-control mb-3" id="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-block btn-me btn-me-small mb-3">Log In</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body d-flex p-0">
+            <!-- Left Side Content -->
+            <div class="p-4 text-center modal-left" id="signUpModalLeftContent" style="width: 40%;">
+              <img src="assets/img/logo.png" alt="Logo" class="mb-3" style="width: 80px;">
+              <h5 class="text-center">Sign Up</h5>
+              <p>We do not share your personal details with anyone.</p>
+            </div>
+            <!-- Right Side Content -->
+            <div class="p-4" id="signUpModalRightContent" style="flex: 1;">
+              <form id="signUpForm">
+                <div class="mb-3">
+                  <label for="signUpMobileNumber" class="form-label">Mobile Number</label>
+                  <input type="text" class="form-control" id="signUpMobileNumber" placeholder="Mobile Number" required>
+                </div>
+                <button type="submit" class="btn btn-block btn-me btn-me-small mb-3" id="continueBtn">Continue</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Second Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand fw-bold" href="#"><b>De Paul LCC</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#"><b>HOME</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#about"><b>ABOUT US</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <b>COURSES</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item fw-bold" href="german.html"><b>GERMAN</b></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item fw-bold" href="admission.html"><b>ADMISSION COUNSELLING</b></a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#videos"><b>VIDEOS</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#team"><b>OUR TEAM</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#testimonials"><b>TESTIMONIALS</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="gallery.html"><b>GALLERY</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#contact"><b>CONTACT US</b></a>
+          </li>
+        </ul>
+      </div>
+    </nav>      
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="enquiryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="enquiryModalLabel">Send Enquiry</h5>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="enquiryName" class="form-label">Name *</label>
+                          <input type="text" class="form-control" id="enquiryName" placeholder="Name" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="enquiryMobile" class="form-label">Mobile Number *</label>
+                          <div class="input-group">                              
+                              <input type="tel" class="form-control" id="enquiryMobile" placeholder="Mobile Number" required>
+                          </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="enquiryEmail" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="enquiryEmail" placeholder="Email">
+                      </div>
+                      <div class="mb-3">
+                          <label for="enquiryMessage" class="form-label">Message</label>
+                          <textarea class="form-control" id="enquiryMessage" rows="4" placeholder="Message" maxlength="1000"></textarea>
+                          <div class="form-text"><span id="charCount">0</span> of 1000 characters</div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary btn-me btn-me-small">Submit</button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="one" style="background-image: url('assets/img/BUILDINGS.png');">
+      <div class="content">
+        <p>If studying abroad is your dream, we can make it a reality.</p>
+        <h2>GERMAN TRAINING INSTITUTE</h2>
+        <button type="button" class="btn btn-primary btn-me" data-toggle="modal" data-target="#enquiryModal">Enquire Now</button>
+      </div>
+    </section>    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a name="about"></a>
+    <section class="py-5 two hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-4 section-head1">ABOUT US</h2>
+            <p class="lead">
+              The De Paul Linguistic Coaching Centre (DPLCC) is a language institute run by Vincentian Fathers. Rev. Fr. Tomson Pananal V.C. founded it on October 3, 2022. It is located in Nedumkunnam, Mulayamveli road, Kottayam district, Kerala. This institute is distinctive in the way it incorporates a campus and a hostel under one roof. We primarily instruct German. Our primary objective is to provide a successful career and excellent faculty from India and abroad.
+              De Paul assists students in achieving long-term work or academic success through continuous learning and test preparation. Our concerted effort is to improve their performance and support them in accomplishing their primary goals.
+            </p>
+            <button type="button" class="btn btn-primary btn-me" data-toggle="modal" data-target="#enquiryModal">Enquire Now</button>
+          </div>
+          
+          <div class="col-lg-6">
+            <img src="assets/img/building.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 three hidden">
+      <div class="container">
+        <div class="row align-items-center">        
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="display-4 section-head1">FR TOMSON GEORGE V.C</h2>
+            <p class="lead"><b>Director</b></p>
+            <p class="lead">
+              Fr. Tomson George V.C. took the initiative to establish the first language institute in Nedumkunnam, with the goal of providing language classes to help people from ordinary families achieve their overseas dreams at a lower cost. He has made numerous contributions to the field of education by establishing and developing various institutions to assist children from middle-class families. <br><br>
+              De Paul LCC intends to expand its consulting services in order to assist people who want to study or work abroad. DPLCC will undoubtedly provide the best coaching and consulting services to assist students in meeting their objectives.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="assets/img/f1.jpeg" class="img-fluid amoeba" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 four hidden" style="background-image: url('assets/img/towers.png');">
+      <div class="container">
+        <h2 class="section-head2">Open your World to the Wonders with De Paul</h2>
+        <p class="lead">
+          Studying abroad allows you to travel worldwide while gaining transferrable skills in your chosen field. It can help you succeed in your personal life and career by allowing you to make global connections and add real-world context to what you've read in your textbooks! You're probably the type of person who wants to travel the world and experience new adventures if you're reading this. You enjoy a change of pace and may wish to learn another language. Even if you are shy at times, you are aware that the right environment can completely bring you out of your shell.
+          Can you imagine going to school during the week and spending the weekend exploring a completely new country? Or how about combining your lunch break with a casual conversation in a second language? That could be your entire life, or at least one semester! Stepping outside of your comfort zone, embracing a new culture and way of life, and returning home with unforgettable memories—all while remaining on track with your school requirements and graduation plans. <br><br>
+          One of the most effective ways to advance academically, improve your resume, and connect with the world (and yourself) on a deeper level is to study abroad. You'll find everything you need to know to get started on your study abroad adventure right here. <br><br>
+          We are here to help you!!
+        </p>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a name="courses"></a>
+    <section class="py-5 five hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">OUR MAIN PROGRAM</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card h-100 five-card">
+              <img class="card-img-top" src="assets/img/ger.png" alt="Program Image">
+              <div class="card-body text-center">
+                <h5 class="card-title">GERMAN</h5>
+                <p class="card-text">
+                  We teach German at all levels, from beginner to advanced, all year long (levels as defined by the Common European Reference Framework: A = elementary, B = intermediate, C = advanced). You can begin your German course in our De Paul on any Monday, regardless of your current level.
+                </p>
+                <button type="button" class="btn btn-primary btn-me" data-toggle="modal" data-target="#enquiryModal">Enquire Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a name="videos"></a>
+    <!-- <section class="py-5 six hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">VIDEOS</h2>
+    
+        <div class="row">
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/thryEki-4YA?si=6iXl2N-sUQlSOCnx?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">DANCE BY GERMAN STUDENTS</h5>
+            <p class="text-center"></p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/Gg2fdNiiF7k?si=gTQIulFhIVKlWFMo?enablejsapi=1"
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">German B2 Student Fr. Raju</h5>
+            <p class="text-center">Rev. Fr. Raju</p>
+          </div>
+    
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/8TL50Y49dYs?si=4SDCMEUN9RlNCQ8X?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">De Paul Lcc Nedumkunnam and Myladi</h5>
+            <p class="text-center">German Offline and Online Coaching</p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/7L0bsacZVeQ?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Rev. Fr. Martin Malpan VC</h5>
+            <p class="text-center">German faculty and Placement coordinator in Berlin</p>
+          </div>
+    
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/tffrmhwJbn0?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Sonu Clara Sojan</h5>
+            <p class="text-center">Completed B2 level in De Paul LCC, Nedumkunnam</p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/HlfkXMbaQDY?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Ann Rose</h5>
+            <p class="text-center">Ausbildung Nursing in Germany</p>
+          </div>
+    
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/IkV9MJDjoXU?enablejsapi=1"
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Director's Message</h5>
+            <p class="text-center">De Paul LCC, Nedumkunnam</p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/zknIMvOZ0Tk?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Students' Programme</h5>
+            <p class="text-center">Dance performance of A1 Girls</p>
+          </div>
+
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/WU15HPaa4bo?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center">Director's Day Celebration</h5>
+            <p class="text-center">De Paul LCC Teachers' performance</p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/40ZRGXK-AFk?enablejsapi=1"
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center"></h5>
+            <p class="text-center"></p>
+          </div>    
+    
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/jTpxIRuxD7o?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center"></h5>
+            <p class="text-center"></p>
+          </div>
+          <div class="col-md-6 col-xs-12 video-desc-holder">
+            <div class="embed-responsive embed-responsive-16by9 mb-4">
+              <iframe class="embed-responsive-item" 
+                      src="https://www.youtube.com/embed/lIsAKPa94Io?enablejsapi=1" 
+                      allowfullscreen>
+              </iframe>
+            </div>
+            <h5 class="text-center"></h5>
+            <p class="text-center"></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 seven hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">OUR FORTE</h2>
+        <p class="lead text-center">We provide authentic educational services</p>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card h-100 seven-card">
+              <img class="card-img-top" src="assets/img/suc.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">SUCCESS ASSURED</h5>
+                <p class="card-text">
+                  Ensure your success by taking unlimited classes under the supervision of expert mentors until you pass your test.
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card h-100 seven-card">
+              <img class="card-img-top" src="assets/img/cons.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">CONSULTANCY</h5>
+                <p class="card-text">
+                  Our cutting-edge technology assists international students and recruitment partners in selecting the best global universities.
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card h-100 seven-card">
+              <img class="card-img-top" src="assets/img/gui.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">PERFECT GUIDELINES</h5>
+                <p class="card-text">
+                  Our group is socially and emphatically adept. We can build cultural bridges across continents, bringing people from all over the world together.
+                </p>                
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 eight hidden">
+      <div class="container my-4">
+        <h2 class="text-center mb-4 section-head3">WHY US</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card eight-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-id-card card-icon"></i>
+                        <h5 class="card-title">Need Identification of Each Student</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card eight-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-book card-icon"></i>
+                        <h5 class="card-title">Customized Courses</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card eight-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-person-chalkboard card-icon"></i>
+                        <h5 class="card-title">Advanced Teaching Techniques</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card eight-card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-scroll card-icon"></i>
+                        <h5 class="card-title">Guarantee Certification</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 nine hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">OUR MANAGEMENT</h2>
+        <p class="lead text-center">The strong pillars behind our success</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 nine-card">
+              <img class="card-img-top" src="assets/img/avatars/mat.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Mathew Kakkattuppillil</h4>
+                <p class="card-text">Provincial Superior</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 nine-card">
+              <img class="card-img-top" src="assets/img/avatars/abr.jpeg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Abraham Kanjirakonam</h4>
+                <p class="card-text">Spiritual Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 nine-card">
+              <img class="card-img-top" src="assets/img/avatars/joj.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Jojo Asariparambil</h4>
+                <p class="card-text">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 nine-card">
+              <img class="card-img-top" src="assets/img/avatars/jim.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Jimmichen Kulathinkal</h4>
+                <p class="card-text">Co-ordinator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a name="team"></a>
+    <section class="py-5 ten hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">OUR TEAM</h2>
+        <p class="lead text-center">Our people are our greatest asset and biggest differentiator.</p>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/mar.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Martin Malpan VC</h4>
+                <p class="card-text">German C1 qualified Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/tan.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Bro. Tansen</h4>
+                <p class="card-text">German C1 qualified Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/tob.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Tobin Tomy</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/raj.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Fr. Raju Pasala VC</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/dona.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Dona Mary Rigy</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/ann.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Anno Domini</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/alv.jpeg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Alvin Vincent</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/ale.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Aleena Anna Jayan</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/don.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Dona John</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/jan.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Janet Sojan</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/ap.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Aparna Sunny</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/ble.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Blessy Jolly</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/diya.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Diya Jose</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/mar.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Maria Joseph</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 ten-card">
+              <img class="card-img-top" src="assets/img/avatars/the.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Theja Mary Mathew</h4>
+                <p class="card-text">German Trainer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 eleven hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">SUPPORTING STAFF</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 eleven-card">
+              <img class="card-img-top" src="assets/img/avatars/cat.jpeg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Cathreenamma</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 eleven-card">
+              <img class="card-img-top" src="assets/img/avatars/son.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Sonia Jose</h4>
+                <p class="card-text">Spiritual Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 eleven-card">
+              <img class="card-img-top" src="assets/img/avatars/mam.jpg" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Mamta Ekka</h4>
+                <p class="card-text">Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
+            <div class="card h-100 eleven-card">
+              <img class="card-img-top" src="assets/img/avatars/jol.png" alt="Program Image">
+              <div class="card-body">
+                <h4 class="card-title">Jolly Joseph</h4>
+                <p class="card-text">Co-ordinator</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <a name="testimonials"></a>
+    <section class="py-5 twelve">
+      <h2 class="text-center mb-4 section-head3">TESTIMONIALS</h2>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "I have completed my IELTS classes at De Paul LCC. Nedumkunngm, and this institution is one of the best ones for IELTS coaching. The teaching, in particular, is excellent, and it is impressive that the trainer gives individual attention to each student. The fact that there are only a limited number of students in each batch ottracted me to this institute. I recommend this institute for those students who wish to get an excellent score in IELTS."
+              </p>
+              <h3 class="car-h">Nilson</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "I prepared for my IELTS at De Paul LCC, Nedumkunnam, Kottayam. I've got a good experience to share about the institution. Every trainer and student were engaging and courteous. The teaching method, in particular, was very impressive. Students get the opportunity for face-to-face interaction with tutors as compared to other institutions. So I always recommend this institution to my friends, colleagues, and family."
+              </p>
+              <h3 class="car-h">Milin Shibu</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "I have chosen the De Paul Linguistic Coaching Center for my IELTS coaching because it is near my house. I think I made the best choice in choosing the consultancy and training. I wish to express my gratitude to Rev. Fr. Tomson in particular for his wise counsel ond inspiration. Additionally. trainers are excellent and supportive. In particular, Shiju Mam's motivational speech left a lasting impression on me. It helps me achieve my dreom. Moreover, the chapel is the most serene place where I can pray every day. which gives me good energy and courage. Additionally. the ambience is spotless and well-kept. with a cozy ond pleasant mood. For anyone seeking customized training that is truly worthwhile. I heartily suggest this institute."
+              </p>
+              <h3 class="car-h">July Ajoyi</h3>
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "My experience at De Paul LCC was really fantastic. My IELTS band score of 7 was made possible by the institute and the trainers. Trainers do so much more than just ossist you in getting a high band score. They will help you find your true potential, ond the institute also provides legitimate guidance for what to do next in the case of further career exploration. The faculty at the institute has such a great deal of expertise, is friendly towards the students, understands their issues, and offers a good strategic plan to help them achieve their dreams. The institute itself provides a homely feel with good, amioble trainers."
+              </p>
+              <h3 class="car-h">Jissow George</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "Frankly speaking, it is one of the most positive experiences l've ever had. Thanks to our highly professional, friendly. and incredibly motivating tutors. I'm extremely grateful to them and the management in general for the knowledge and practice I have gained in learning German"
+              </p>
+              <h3 class="car-h">Alvi Maria Sabu</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "The institute provides brilliont training for every student. They have top-notch instructors with years of training experience. Apart from that. they are approachable ond supportive, providing you a good insight of the German language. Without a doubt, the experience I gained here will assist me in obtaining the desired B2 score."
+              </p>
+              <h3 class="car-h">Rose Mol Varkey</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "In my opinion. I chose the best ploce for my German classes. Being from another state. I can assure you that. no one can put as much effort into our development and learning as they do. Other thon that. the monagement's support and guidance in providing the best facilities is much appreciated. De Paul deserves praise for giving us this wonderful opportunity."
+              </p>
+              <h3 class="car-h">Amalu Manoj</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "It is a great experience and full of challenges. I am glad that I met the great administrative staff and facilities. It is an extremely useful course that is full of information and clear instructions that guide us not only in grammar and vocabulary but also in improving our speaking skills. It was (and hopefully will continue to be) absolutely magnificent, inspiring, and worthwhile, something that propels you to the next level."
+              </p>
+              <h3 class="car-h">Agnes Sabu</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "Despite your lack of confidence. the trainers here will undoubtedly assist you in speaking with confidence. I'm realizing that I studied and understood more thon I first believed. and that will help me to attoin my career in Germany. One of the advantages students can enjoy during the training sessions is the calm and peaceful atmosphere they experience here."
+              </p>
+              <h3 class="car-h">Riya Jose</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "One of my favorite experiences ever..!I discovered the value of stepping outside of my comfort zone and attempting new things. Speakinga foreign language like German gave me a sense of feorlessness. Good lessons. exceptionally organized classrooms and hostel facilities, amiable instructors, and a conducive environment for leorning. I recommend De Paul to anyone searching for the best German training that seems to be trustworthy and beneficial."
+              </p>
+              <h3 class="car-h">Anjalin Saji</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "Lovely campus. The troinerss are really welcoming. It is an eco-friendly center with good hostel amenities thot provides a good atmosphere for the students to study. They constantly provide me with detailed explanations for the further understanding of difficult topics, especially grammar. The constructive criticism I received on my evaluations motivated me to try harder, which helped me consistently improve my scores and achieve 98% on my A2 exam."
+              </p>
+              <h3 class="car-h">Ashna Benny</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "Extraordinary experience. My delight with the classes is unwovering. Friendly troiners anda comfortable environment. Nice hostel with mediocre amenities and meals. Highly suggested. Join us by coming here."
+              </p>
+              <h3 class="car-h">Anju Thomson</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                Excellent classes. I had such a fantastic time learning German at De Paul. I enjoyed the method of instruction becouse it was extremely simple to understand, and the ambiance was welcoming. I urge each ond every one of you to enroll in this institute, as it is highly beneficial to receive the best training ever."
+              </p>
+              <h3 class="car-h">Akshaya Raj</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "I'm confident that this is the best location for learning German. Every time I have questions, träiners are always available. The fact that the hostel and clossroom are under one roof is its greatest benefit. I thoroughly enjoy every opportunity to better myself and develop myself. Authentic cuisine and setting I think it is more thrilling for me to be here because l have the team's support and guidance every time. I appreciate the entire team at De Paul in this regard."
+              </p>
+              <h3 class="car-h">Rabia Manaf</h3>
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "Very pleasant experience. The classes have met all of my expectations. Trainers are friendly and help to create a cozy atmosphere. In my opinion, hostel amenities are first-rate. To live and study here is amazing."
+              </p>
+              <h3 class="car-h">Annu Thomas</h3>              
+            </div>
+          </div>
+          <div class="carousel-item car-me" style="background-image: url('assets/img/testimonials.png');">            
+            <div class="carousel-caption">
+              <p class="car-p">
+                "I have had o wonderful experience since l joined here during the past few months. I always have a sense of being at home. Becouse the management and trainers are so supportive, so each student receives individual attention from the trainers. I successfully completed my Al and A2 with a score of 96%. I om groteful to De Paul LCC for all of their help and advice. I suggest this as the ideal place for anyone looking to receive the best German coaching."
+              </p>
+              <h3 class="car-h">Sonu Clara Sojan</h3>              
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 last hidden">
+      <div class="container">
+        <h2 class="text-center mb-4 section-head3">CONTACT US</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card h-100 last-card">
+              <img class="card-img-top" src="assets/img/loc.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">Our Office Address</h5>
+                <p class="card-text">
+                  De Paul, Near Panchayath, Mulayamveil Road Nedumkunnam, Nedumkunnam, Kottayam, Kerala 686542 
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 last-card">
+              <img class="card-img-top" src="assets/img/pla.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">General Enquiries</h5>
+                <p class="card-text">
+                  depaullcc@gmail.com
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 last-card">
+              <img class="card-img-top" src="assets/img/con'.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">Call Us</h5>
+                <p class="card-text">
+                  +91-9846369301 <br>
+                  +91-9497156278
+                </p>                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card h-100 last-card">
+              <img class="card-img-top" src="assets/img/tim.png" alt="Program Image">
+              <div class="card-body">
+                <h5 class="card-title">Our Timings</h5>
+                <p class="card-text">
+                  Mon - Sun : Open 24 hrs
+                </p>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <form action="">
+          <div class="row last-form">          
+            <div class="col-md-6 mb-4">
+              <div class="form-group">              
+                <input type="text" class="form-control" id="input1" placeholder="Full Name">
+              </div>
+              <div class="form-group mt-3">              
+                <input type="text" class="form-control" id="input2" placeholder="Mobile Number">
+              </div>
+              <div class="form-group mt-3">              
+                <input type="email" class="form-control" id="input3" placeholder="Email ID">
+              </div>
+            </div>
+      
+            <!-- Textarea column -->
+            <div class="col-md-6 mb-4">
+              <div class="form-group">              
+                <textarea class="form-control" id="textarea" rows="6" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Submit button row -->
+          <div class="row">
+            <div class="col-12 text-center">
+              <button type="submit" class="btn rounded-pill btn-primary mt-4 btn-me">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>    
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <section class="py-5 loc hidden">
+      <div class="row justify-content-center location-map">
+        <div class="col-md-9">
+          <h2 class="text-center mb-4 section-head3">OUR LOCATION</h2>
+          <div class="embed-responsive embed-responsive-16by9 loc-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.751569507162!2d76.66893873772341!3d9.508182596343907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b06319ba520cd35%3A0x928e8f2ec512745b!2sDe%20Paul%20Lcc%20(De%20Paul%20linguistic%20Coaching%20Centre)!5e0!3m2!1sen!2sin!4v1724940087253!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Full-Width Footer -->
+    <footer class="text-center text-lg-start text-dark" style="background-color: #e2dbff6e;">
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="footer-links">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Useful Links</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+              <p>
+                <a href="privacy.html" class="text-dark">Privacy Policy</a>
+              </p>
+              <p>
+                <a href="#about" class="text-dark">About Us</a>
+              </p>
+              <p>
+                <a href="#videos" class="text-dark">Videos</a>
+              </p>
+              <p>
+                <a href="#testimonials" class="text-dark">Testimonials</a>
+              </p>
+              <p>
+                <a href="#contact" class="text-dark">Contact Us</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Navigation</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+              <p>
+                <a href="#" class="text-dark">Home</a>
+              </p>
+              <p>
+                <a href="#courses" class="text-dark">Courses</a>
+              </p>
+              <p>
+                <a href="#team" class="text-dark">Our team</a>
+              </p>
+              <p>
+                <a href="gallery.html" class="text-dark">Gallery</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <a name="contact"></a>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+              <p class="lead text-center foot-addr">De Paul, Near Panchayath, Mulayamveil</p>
+              <p class="lead text-center foot-addr">Road Nedumkunnam, Nedumkunnam,</p>
+              <p class="lead text-center foot-addr">Kottayam, 686542, Kerala</p>
+              <p class="lead text-center foot-addr">+91-9497156278</p>
+              <a class="lead text-center foot-addr foot-email" href="mailto:depaullcc@gmail.com">depaullcc@gmail.com</a>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-right">
+              <p class="mb-2 d-inline-block">UI Design by</p>
+              <a href="https://github.com/STECH-WEB-STUDIOS" target="_blank" class="d-inline-block mb-4">
+                <img src="assets/img/STECH-BLACK.png" alt="STECH WEB STUDIOS" class="img-fluid stech">
+              </a>
+            </div>
+            <!-- Grid column -->
+
+
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #00000033">
+        &copy; Copyright 2024.               
+        De Paul Linguistic Coaching Centre
+        All Rights Reserved.
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End of Footer -->
+
+
+
+  </div>
+
+  <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/modal-change.js"></script>
+
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Particle.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/particles-config.js"></script>  
+  
+
+</body>
+</html>
