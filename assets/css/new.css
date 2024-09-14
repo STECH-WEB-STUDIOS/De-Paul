@@ -1,4 +1,3 @@
-
 body{
     background-color: #e2dbff !important;
 }
@@ -60,7 +59,6 @@ h2{
 }
 /*******************************************************************/
 
-
 section.one {
     position: relative; /* Positioning context for the pseudo-element */
     height: 80vh;
@@ -70,7 +68,6 @@ section.one {
     overflow: hidden; /* Ensure no overflow beyond the section */
     box-shadow: 0px 30px 100px #251455;
 }
-
 section.one::before {
     content: ""; /* Necessary to display the pseudo-element */
     position: absolute;
@@ -83,7 +80,6 @@ section.one::before {
     opacity: 0.5; /* Opacity for the background image */
     z-index: 1; /* Ensures it is below the content */
 }
-
 .content {
     position: relative;
     width: fit-content;
@@ -92,14 +88,12 @@ section.one::before {
     transform: translateY(250px);
     z-index: 2; /* Keep content above the pseudo-element */
 }
-
 .content h2 {
     font-weight: bolder !important;
     font-size: 3.5rem !important;
     color: #34255c !important;
     z-index: 2 !important;
 }
-
 .content p {
     font-size: 1.5rem;
     font-weight: 500;
@@ -129,7 +123,6 @@ section.two p{
 section.three{
     margin-top: 70px;
 }
-
 section.three h2, h6{
     color: #34255c !important;
     font-weight: bolder;
@@ -178,7 +171,6 @@ section.five{
     color: #34255c !important;
     font-weight: 500 !important;
 }
-
 .five-card {
   border-radius: 11px !important;
 }
@@ -215,7 +207,6 @@ section.seven p{
     color: #34255c !important;
     font-weight: 500 !important;
 }
-
 .seven-card {
   padding: 15px;
   background: linear-gradient(white, #ffffff00) !important;
@@ -235,7 +226,6 @@ section.seven p{
     transition: 0.3s ease;
     background: linear-gradient(white, #ffffff44) !important;
 }
-
 
 /*******************************************************************/
 
@@ -310,7 +300,6 @@ section.nine p{
     text-align: center;
     font-size: 1rem !important;
 }
-
 .nine-card {
   padding: 20px;
   background: linear-gradient(#c7b3ff, #99131300) !important;
@@ -326,8 +315,6 @@ section.nine p{
     box-shadow: 0px 0px 50px #3720758f;
 }
 
-
-  
 @media (max-width: 991px) {
     .nine-card .card-title {
     font-size: 1.2rem; /* Font size for medium screens */
@@ -359,7 +346,6 @@ section.ten p{
     text-align: center;
     font-size: 1rem !important;
 }
-
 .ten-card {
   padding: 25px;
   background: linear-gradient(#c7b3ff, #99131300) !important;
@@ -407,7 +393,6 @@ section.eleven{
     text-align: center;
     font-size: 1.2rem !important;
 }
-
 .eleven-card {
   padding: 25px;
   background: linear-gradient(#c7b3ff, #99131300) !important;
@@ -449,7 +434,6 @@ section.eleven{
     padding: 20px;
     overflow: hidden; /* Prevent content overflow */
 }
-
 .car-h {
     position: absolute;
     left: 50%;
@@ -459,7 +443,6 @@ section.eleven{
     font-size: 2rem !important;
     z-index: 10;
 }
-
 .carousel-caption {
     position: absolute;
     top: 10% !important;
@@ -472,7 +455,6 @@ section.eleven{
     color: black !important;
     font-weight: 500 !important;
 }
-
 .car-p {
     margin-top: 8em; /* Use em or rem for relative spacing */
     font-size: 1rem; /* Use a relative font size */
@@ -525,8 +507,6 @@ section.eleven{
         font-size: 0.8rem; /* Smaller font size for mobile */
     }
 }
-
-
 
 /*******************************************************************/
 
@@ -629,14 +609,11 @@ section.ger-one container row col-md-6 img{
 
 
 
-
-
 /**************PROFILE.HTML***************/
 .p-main{
     background-color: #ffffff9d !important;
     border-radius: 10px !important;
 }
-
 .camera-icon {
     position: absolute;
     bottom: 0;
@@ -647,7 +624,6 @@ section.ger-one container row col-md-6 img{
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-
 .camera-icon i {
     font-size: 18px;
     color: #7768ff;
@@ -659,7 +635,6 @@ section.ger-one container row col-md-6 img{
         flex: 1 1 25%; 
         max-width: 25%;
     }
-
     .col-lg-4 {
         flex: 1 1 33.33333%; 
         max-width: 33.33333%;
@@ -678,7 +653,6 @@ section.ger-one container row col-md-6 img{
         flex: 1 1 50%; 
         max-width: 50%;
     }
-
     .col-12 {
         flex: 1 1 100%; 
         max-width: 100%;
@@ -692,7 +666,6 @@ section.ger-one container row col-md-6 img{
     }
 }
 
-
 .p-card {
     border: 1px solid #e2e8f0;
     border-radius: 11px !important;
@@ -700,14 +673,12 @@ section.ger-one container row col-md-6 img{
     box-shadow: 0px 3px 5px #00000042;
     overflow: auto;
 }
-
 .card-header {
     background-color: #ffffff;
     border-bottom: 1px solid #e2e8f0;
     padding: 1rem 1.25rem;
     cursor: pointer;
 }
-
 .card-btn {
     display: flex;
     align-items: center;
@@ -718,46 +689,37 @@ section.ger-one container row col-md-6 img{
     font-size: 1.1rem;
     text-decoration: none; /* Ensure no underline effect */
 }
-
 .card-btn:hover {
     text-decoration: none !important; /* Remove underline on hover if it was applied */
 }
-
 .card-btn .text-content h5 {
     margin: 0;
     font-weight: bolder;
     color: #251455;
 }
-
 .card-btn .text-content p {
     margin: 0;
     font-size: 0.9rem;
     color: #251455 !important;
     font-weight: 500;
 }
-
 .card-btn i {
     font-size: 1.8rem;
     margin-right: 20px;
     margin-bottom: 20px !important;
     color: #7768ff;
 }
-
 .card-body {
     padding: 1rem 1.25rem;
     font-size: 0.95rem;
     color: #6c757d;
 }
-
-
 .card-body form {
     margin: 0;
 }
-
 .form-group {
     margin-bottom: 1rem;
 }
-
 .form-label {
     display: block; /* Ensures the label is displayed as a block element, stacking above the input */
     margin-bottom: 0.5rem; /* Adds some space between the label and the input */
@@ -766,16 +728,7 @@ section.ger-one container row col-md-6 img{
     color: #251455;
 }
 
-
-
 /**************PROFILE.HTML***************/
-
-
-
-
-
-
-
 
 
 /**************OTHERS***************/
@@ -783,24 +736,20 @@ section.ger-one container row col-md-6 img{
 .navbar-light .navbar-brand {
     color: #251455 !important;
 }
-
 ::-webkit-scrollbar {
     width: 5px !important;
     height: 3px;
 }
-
 ::-webkit-scrollbar-thumb {
     background: rgb(167, 142, 255); 
     border-radius: 10px; 
 }
-
 .dropdown-item:hover{
     background-color: #d4ccfc !important;
 }
 .dropdown-item:active{
     background-color: #372075 !important;
 }
-
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -822,7 +771,6 @@ section.ger-one container row col-md-6 img{
 #scrollTopBtn:hover {
   background-color: #2514558f
 }
-
 #whatsappBtn {
   position: fixed;
   bottom: 20px;
@@ -838,20 +786,16 @@ section.ger-one container row col-md-6 img{
   box-shadow: 0 5px 8px #00000080;
   border: none;
 }
-
 #whatsappBtn:hover {
   background-color: #25D366;
   color: white;
 }
-  
-
 .modal-content {
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
   background-color: #ffffff !important;  
 }
-
 .modal-left{
     border-right: 1px groove #00000018;
     color: #251455 !important;
@@ -864,7 +808,6 @@ section.ger-one container row col-md-6 img{
     font-weight: 500;
     color: #251455 !important;
 }
-
 .modal-body {
   padding: 0;
 }
@@ -872,7 +815,6 @@ section.ger-one container row col-md-6 img{
 .modal-body .p-4 {
   padding: 2rem;
 }
-
 .modal-body img {
   border-radius: 50%;
 }
@@ -880,33 +822,26 @@ section.ger-one container row col-md-6 img{
 .btn-block {
   width: 100%;
 }
-
 .modal-body h5 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-
 .modal-body p {
   font-size: 0.9rem;
   color: #6c757d;
 }
-
 .modal-body a {
   font-size: 0.9rem;
 }
-
 .modal-body input {
   border-radius: 4px;
   background-color: #00000000;
 }
-
 .modal-body button {
   border-radius: 5px;
   font-size: 1rem;
   color: white;
 }
-
-
 /**************OTHERS***************/
 
 
